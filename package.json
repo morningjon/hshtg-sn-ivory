@@ -1,0 +1,27 @@
+{
+  "name": "hshtg-sn-ivory",
+  "version": "1.0.0",
+  "description": "Ivory theme for Standard Notes with SF Pro Text font, inspired by Proton Mail's Ivory high-contrast theme",
+  "main": "ivory-theme.css",
+  "keywords": [
+    "standard-notes",
+    "theme",
+    "ivory",
+    "sf-pro-text",
+    "high-contrast",
+    "accessibility"
+  ],
+  "author": "morningjon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morningjon/hshtg-sn-ivory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morningjon/hshtg-sn-ivory/issues"
+  },
+  "homepage": "https://github.com/morningjon/hshtg-sn-ivory#readme",
+  "sn": {
+    "main": "ivory-theme.css"
+  }
+}

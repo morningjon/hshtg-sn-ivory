@@ -1,0 +1,40 @@
+{
+  "name": "Ivory",
+  "identifier": "com.github.morningjon.hshtg-sn-ivory",
+  "version": "1.0.0",
+  "description": "A warm, high-contrast ivory theme inspired by Proton Mail's Ivory theme, featuring SF Pro Text font. Easy on the eyes with excellent readability and accessibility.",
+  "author": "morningjon",
+  "url": "https://github.com/morningjon/hshtg-sn-ivory",
+  "dock_icon": {
+    "type": "circle",
+    "background_color": "#fffef8",
+    "foreground_color": "#2c2820",
+    "border_color": "#d4d0c8"
+  },
+  "layer_version": 1,
+  "valid_until": "2099-01-01T00:00:00.000Z",
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "package_info": {
+    "name": "Ivory Theme",
+    "version": "1.0.0",
+    "download_url": "https://github.com/morningjon/hshtg-sn-ivory/archive/refs/heads/main.zip",
+    "github_url": "https://github.com/morningjon/hshtg-sn-ivory",
+    "latest_url": "https://raw.githubusercontent.com/morningjon/hshtg-sn-ivory/main/theme.json",
+    "marketing_url": "https://github.com/morningjon/hshtg-sn-ivory",
+    "thumbnail_url": "https://raw.githubusercontent.com/morningjon/hshtg-sn-ivory/main/thumbnail.png"
+  },
+  "layerable": true,
+  "constants": {
+    "mainBackgroundColor": "#fffef8",
+    "mainForegroundColor": "#1a1a1a",
+    "mainBorderColor": "#d4d0c8"
+  },
+  "features": [
+    "High contrast for better accessibility",
+    "Warm ivory color palette",
+    "SF Pro Text font",
+    "Optimized for long reading sessions",
+    "Reduced eye strain"
+  ]
+}

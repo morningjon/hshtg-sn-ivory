@@ -1,0 +1,261 @@
+/**
+ * Standard Notes - Ivory Theme
+ * Inspired by Proton Mail's Ivory high-contrast theme
+ * Font: SF Pro Text Regular
+ */
+
+/* Import SF Pro Text font */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('https://morningjon.github.io/hshtg-fonts/SF-Pro-Text-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Root Variables - Ivory Theme Colors */
+:root {
+  /* Primary Colors - Warm Ivory/Cream Palette */
+  --sn-stylekit-background-color: #fffef8;
+  --sn-stylekit-foreground-color: #1a1a1a;
+  --sn-stylekit-border-color: #d4d0c8;
+  
+  /* Secondary Background Colors */
+  --sn-stylekit-secondary-background-color: #f5f3ed;
+  --sn-stylekit-tertiary-background-color: #eae6dc;
+  
+  /* Contrast Colors */
+  --sn-stylekit-contrast-background-color: #2c2820;
+  --sn-stylekit-contrast-foreground-color: #fffef8;
+  --sn-stylekit-contrast-border-color: #4a4538;
+  
+  /* Info Colors */
+  --sn-stylekit-info-color: #6b5d4f;
+  --sn-stylekit-info-contrast-color: #fffef8;
+  
+  /* Success Colors */
+  --sn-stylekit-success-color: #5a7f5a;
+  --sn-stylekit-success-contrast-color: #fffef8;
+  
+  /* Warning Colors */
+  --sn-stylekit-warning-color: #c89850;
+  --sn-stylekit-warning-contrast-color: #1a1a1a;
+  
+  /* Danger/Error Colors */
+  --sn-stylekit-danger-color: #b8594e;
+  --sn-stylekit-danger-contrast-color: #fffef8;
+  
+  /* Neutral Colors */
+  --sn-stylekit-neutral-color: #8a8575;
+  --sn-stylekit-neutral-contrast-color: #fffef8;
+  
+  /* Shadow Colors */
+  --sn-stylekit-shadow-color: rgba(42, 37, 30, 0.15);
+  
+  /* Scrollbar Colors */
+  --sn-stylekit-scrollbar-track-border-color: #d4d0c8;
+  --sn-stylekit-scrollbar-thumb-color: #a69f8e;
+  
+  /* Editor Colors */
+  --sn-stylekit-editor-background-color: #fffef8;
+  --sn-stylekit-editor-foreground-color: #1a1a1a;
+  
+  /* Paragraph Text Colors */
+  --sn-stylekit-paragraph-text-color: #2c2820;
+  
+  /* Accessory Colors */
+  --sn-stylekit-accessory-tint-color-1: #6b5d4f;
+  --sn-stylekit-accessory-tint-color-2: #8a7f6f;
+  --sn-stylekit-accessory-tint-color-3: #a69f8e;
+  --sn-stylekit-accessory-tint-color-4: #c2b9a8;
+  --sn-stylekit-accessory-tint-color-5: #5a7f5a;
+  --sn-stylekit-accessory-tint-color-6: #c89850;
+  
+  /* Font Settings */
+  --sn-stylekit-font-size-root: 16px;
+  --sn-stylekit-font-size-editor: 1rem;
+  --sn-stylekit-font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --sn-stylekit-monospace-font: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Droid Sans Mono', 'Source Code Pro', monospace;
+}
+
+/* Base Typography */
+body,
+* {
+  font-family: var(--sn-stylekit-font-family) !important;
+}
+
+/* Editor Specific Styling */
+.sk-editor,
+.editor,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-family: var(--sn-stylekit-font-family) !important;
+  font-size: var(--sn-stylekit-font-size-editor);
+  color: var(--sn-stylekit-editor-foreground-color);
+  background-color: var(--sn-stylekit-editor-background-color);
+}
+
+/* Code Blocks */
+code,
+pre,
+.CodeMirror {
+  font-family: var(--sn-stylekit-monospace-font) !important;
+}
+
+/* Selection Color */
+::selection {
+  background-color: #d4c8a8;
+  color: var(--sn-stylekit-foreground-color);
+}
+
+::-moz-selection {
+  background-color: #d4c8a8;
+  color: var(--sn-stylekit-foreground-color);
+}
+
+/* Links */
+a {
+  color: var(--sn-stylekit-info-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--sn-stylekit-accessory-tint-color-2);
+  text-decoration: underline;
+}
+
+/* Buttons */
+button,
+.sk-button {
+  font-family: var(--sn-stylekit-font-family) !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* Focus States */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid var(--sn-stylekit-info-color);
+  outline-offset: 2px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sn-stylekit-secondary-background-color);
+  border-left: 1px solid var(--sn-stylekit-scrollbar-track-border-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sn-stylekit-scrollbar-thumb-color);
+  border-radius: 6px;
+  border: 2px solid var(--sn-stylekit-secondary-background-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sn-stylekit-neutral-color);
+}
+
+/* Note List Styling */
+.note-list-item {
+  border-bottom: 1px solid var(--sn-stylekit-border-color);
+}
+
+.note-list-item:hover {
+  background-color: var(--sn-stylekit-secondary-background-color);
+}
+
+.note-list-item.selected {
+  background-color: var(--sn-stylekit-tertiary-background-color);
+  border-left: 3px solid var(--sn-stylekit-info-color);
+}
+
+/* Tags */
+.tag {
+  background-color: var(--sn-stylekit-tertiary-background-color);
+  color: var(--sn-stylekit-foreground-color);
+  border: 1px solid var(--sn-stylekit-border-color);
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 0.875rem;
+}
+
+.tag:hover {
+  background-color: var(--sn-stylekit-secondary-background-color);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--sn-stylekit-contrast-background-color);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* High Contrast Elements for Accessibility */
+.sk-panel {
+  box-shadow: 0 2px 4px var(--sn-stylekit-shadow-color);
+}
+
+.sk-modal-background {
+  background-color: rgba(42, 37, 30, 0.6);
+}
+
+/* Status Bar */
+.status-bar {
+  background-color: var(--sn-stylekit-secondary-background-color);
+  border-top: 1px solid var(--sn-stylekit-border-color);
+  color: var(--sn-stylekit-neutral-color);
+}
+
+/* Syntax Highlighting for Code */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--sn-stylekit-neutral-color);
+}
+
+.token.punctuation {
+  color: var(--sn-stylekit-foreground-color);
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: var(--sn-stylekit-accessory-tint-color-5);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: var(--sn-stylekit-accessory-tint-color-6);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: var(--sn-stylekit-info-color);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--sn-stylekit-accessory-tint-color-1);
+}
+
+.token.function {
+  color: var(--sn-stylekit-danger-color);
+}
