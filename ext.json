@@ -1,12 +1,13 @@
 {
   "identifier": "com.github.morningjon.hshtg-sn-ivory",
   "name": "Ivory",
-  "content_type": "SN|Theme",
+  "content_type": "SN|Component",
   "area": "themes",
   "version": "1.0.0",
   "description": "A warm, high-contrast ivory theme inspired by Proton Mail's Ivory theme, featuring SF Pro Text font",
-  "url": "https://morningjon.github.io/hshtg-sn-ivory/ivory-theme.css",
-  "latest_url": "https://morningjon.github.io/hshtg-sn-ivory/ext.json",
+  "url": "https://cdn.jsdelivr.net/gh/morningjon/hshtg-sn-ivory@master/ivory-theme.css",
+  "download_url": "https://github.com/morningjon/hshtg-sn-ivory/archive/master.zip",
+  "latest_url": "https://raw.githubusercontent.com/morningjon/hshtg-sn-ivory/master/ext.json",
   "dock_icon": {
     "type": "circle",
     "background_color": "#fffef8",
